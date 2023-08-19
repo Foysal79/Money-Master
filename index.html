@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="https://cdn.tailwindcss.com"></script>
+     <script src="https://kit.fontawesome.com/c578362853.js" crossorigin="anonymous"></script>
+     <!-- extra start -->
+     <style>
+        * {
+          box-sizing: border-box;
+        }
+         
+        #myVideo {
+          position: fixed;
+          right: 0;
+          bottom: 0;
+          min-width: 100%; 
+          min-height: 100%;
+        }
+        
+        .content {
+          position: fixed;
+          bottom: 0;
+          background: rgba(0, 0, 0, 0.7);
+          color: #f1f1f1;
+          width: 100%;
+          padding: 20px;
+        }
+        
+        
+        
+        
+        </style>
+     <!-- extra end -->
+
+</head>
+<body class="">
+    <video autoplay muted loop id="myVideo">
+        <source src="Falling money Background video - Free stock footage.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+   
+      <div class="content">
+        <div class="mt-6">
+            <h1 class="text-5xl font-semibold text-center text-white" >Money Master <i class="text-blue-500 fa-solid fa-sack-dollar"></i></h1></h1>
+          </div>
+          <div class="flex-1 flex flex-row  mt-10 justify-center">
+           <div>
+               <img class="w-2/3 rounded-2xl" src="./money-master.png" alt="">
+           </div>
+           <div class="bg-gray-400 w-96 text-center pt-5 rounded-2xl ">
+               <h3 class="text-2xl font-medium mb-4">Income</h3>
+               <h4 class="font-medium">income : <input id="Total-income" class="w-2/5 px-2 py-1" type="number" placeholder="Your income"></h4> 
+               <h3 class="text-2xl font-medium mb-4 mt-4">Expenses</h3>
+               <h4 class="font-medium">Food : <input id="food-cost" class="w-2/5 px-2 py-1" type="number" placeholder="Your income"></h4> 
+       
+               <h4 class="font-medium">Rent : <input id="rent-Cost" class="w-2/5 px-2 py-1 mt-4" type="number" placeholder="Your income"></h4>
+               <h4 class="font-medium">Clothes : <input id="clothes-Cost" class="w-2/5 px-2 py-1 mt-4" type="number" placeholder="Your income"></h4> 
+               <button onclick="calculationBtn()"class=" mb-5 border px-5 py-2 rounded-lg bg-violet-400 text-2xl  mt-4 hover:bg-black hover:text-white">Calculate</button>
+       
+               <h3 class="text-3xl font-semibold mb-4">Total Expenses: <span id="total-Espenses">00</span> </h3>
+               <h3 class="text-2xl font-semibold mb-4">Balance: <span id="Balance"></span> </h3>
+                
+               <h4 class="font-medium inline ">save: <input id="saveing" class=" w-2/5 px-2 py-1" type="number" placeholder="koto %"> <p class="inline">%</p> <button onclick="savingCalculation()" class="border px-3 py-1 bg-sky-500 text-white rounded-lg">save</button>   </h4> 
+       
+               <h3 class="text-2xl font-semibold mb-4 mt-4">Saving Amount: <span id="saving-Amount">00</span> </h3>
+               <h3 class="text-2xl font-semibold mb-4">Remaining Balance: <span id="remainingBalance">00</span> </h3>
+       
+           </div>
+          </div>
+      </div>
+
+   
+  
+   <script src="./js/index.js"></script>
+</body>
+</html>
